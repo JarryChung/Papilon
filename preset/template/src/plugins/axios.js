@@ -40,7 +40,7 @@ const defaultFn = {
       }
   },
 
-  checkFial ({ code }) {
+  checkFail ({ code }) {
     return code !== 0
   }
 }
@@ -55,7 +55,7 @@ const install = (Vue, options = {}) => {
     generator = defaultFn.generator,
     transformRequest = defaultFn.transformRequest,
     transformResponse = defaultFn.transformResponse,
-    checkFail = defaultFn.checkFial,
+    checkFail = defaultFn.checkFail,
     failFn,
     successFn
   } = options
