@@ -1,0 +1,33 @@
+{
+  "name": "papilon",
+  "version": "0.0.1",
+  "description": "A powerful and awesome Vue CLI",
+  "main": "index.js",
+  "bin": {
+    "papilon": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarryChung/papilon.git"
+  },
+  "keywords": [
+    "vue-cli",
+    "vue",
+    "cli",
+    "powerful"
+  ],
+  "author": "Jarry Chung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JarryChung/papilon/issues"
+  },
+  "homepage": "https://github.com/JarryChung/papilon#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "execa": "^4.0.0"
+  }
+}
