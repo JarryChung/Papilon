@@ -14,6 +14,14 @@ import './assets/styles/reset.scss'
 import './assets/styles/normalize.scss'
 <%_ } _%>
 
+<%_ if (options.elementUI === 'full') { _%>
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+<%_ } else if (options.elementUI === 'partial') { _%>
+import './plugins/element-ui.js'
+<%_ } _%>
+
 Vue.config.productionTip = false
 
 new Vue({

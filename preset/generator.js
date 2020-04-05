@@ -19,6 +19,14 @@ module.exports = (api, options, rootOptions) => {
     files['./src/assets/styles/normalize.scss'] = './template/src/assets/styles/normalize.scss'
   }
 
+  if (options.elementUI !== 'none') {
+    dep['element-ui'] = '^2.13.0'
+    if (options.elementUI === 'partial') {
+      devDep['babel-plugin-component'] = '^1.1.1'
+      files['./src/plugins/element-ui.js'] = './template/src/plugins/element-ui.js'
+    }
+  }
+
   // Add dependencies and devDependencies
   api.extendPackage({
     dependencies: dep,
@@ -29,7 +37,8 @@ module.exports = (api, options, rootOptions) => {
   api.render({
     './src/main.js': './template/src/main.js',
     './vue.config.js': './template/vue.config.js',
-    './.eslintrc.js': './template/_eslintrc.js'
+    './.eslintrc.js': './template/_eslintrc.js',
+    './babel.config.js': './template/babel.config.js'
   }, options)
 
   api.render({

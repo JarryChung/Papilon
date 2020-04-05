@@ -32,7 +32,8 @@ The following are optional：
 
 - **Axios**: as a Vue plugin
 - **lodash**: as a global variable
-- **Reset.scss** or **Normalize.scss**  or neither
+- **Reset.scss** or **Normalize.scss**
+- Full or partial **Element-UI** components
 
 ## Start
 

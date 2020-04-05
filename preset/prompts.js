@@ -29,5 +29,24 @@ module.exports = [
         value: 'none'
       }
     ]
+  },
+  {
+    name: 'elementUI',
+    type: 'list',
+    message: 'Import Element-UI components?',
+    choices: [
+      {
+        name: 'Full',
+        value: 'full'
+      },
+      {
+        name: 'Partial',
+        value: 'partial'
+      },
+      {
+        name: 'Do not import',
+        value: 'none'
+      }
+    ]
   }
 ]
